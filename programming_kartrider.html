@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: black;
+}
+
+h4{
+  font-size: 14px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background-image: url("./img/dream2.jpg");
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+a:link {
+  color: #2b2b2b;
+}
+a:visited {
+  color: #2b2b2b;
+}
+a:hover {
+  color: #ebebeb;
+}
+a:active {
+  color: #ebebeb;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 15%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 70%;
+  background-color: black;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.jb-wrap {
+  width: 100%;
+  position: relative;
+}
+.jb-wrap img {
+  width: 100%;
+  vertical-align: middle;
+}
+.jb-text {
+  padding: 5px 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  font-weight : lighter;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="profile.html">PROFILE</a>
+    <div class="dropdown">
+      <button class="dropbtn">PLANNING
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="planning.html">전체보기</a>
+        <a href="planning_cgv.html">CGV 웹 리뉴얼</a>
+        <a href="planning_kakaomap.html">카카오맵 승하차 알람</a>
+        <a href="planning_nowadays.html">당신의 문화 비서 Nowadays,</a>
+        <a href="planning_wayplay.html">WAY TO WAYPLAY</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">DESIGN
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="design.html">전체보기</a>
+        <a href="design_dieterrams.html">디터람스 카드뉴스</a>
+        <a href="design_pinterest.html">핀터레스트 홍보 영상</a>
+        <a href="design_heineken.html">하이네켄 홍보 영상</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">PROGRAMMING
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="programming.html">전체보기</a>
+        <a href="programming_benz.html">메르세데스 벤츠</a>
+        <a href="programming_kartrider.html">카트라이더 러쉬 플러스</a>
+      </div>
+    </div>
+  </div>
+
+<a href="index.html"><div class="header">
+  <h1>Dream & Details</h1>
+  <h4>꿈을 가진 꼼꼼한 기획자 한명윤입니다<br><br>
+  긍정적이고 진중한 자세로 새로운 경험들을 만들어 가겠습니다</h4>
+</div></a>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h4>CONTACT ME</h4><br>
+      <p>myhan2003@naver.com<br><br>
+      010-4373-7263</p><br><br>
+      <a href="https://www.facebook.com/hanufloor"><img src="./img/facebook.png" width="30" alt=""></a>&nbsp&nbsp
+      <a href="https://www.instagram.com/my.ooon/"><img src="./img/insta.png" width="30" alt=""></a>
+    </div>
+    <div class="card">
+      <div class="fakeimg"><a href="planning.html"><p>PLANNING ▶</p></a></div>
+      <div class="fakeimg"><a href="design.html"><p>DESIGN ▶</p></a></div>
+      <div class="fakeimg"><a href="programming.html"><p>PROGRAMMING ▶</p></a></div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h5>카트라이더 러쉬 플러스 소개 웹사이트입니다.</h5>
+      <div class="jb-wrap">
+        <div class="jb-image">
+          <img src="./img/kartrider2.jpg" alt=""></div>
+          <div class="jb-text">
+            <p>
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br>
+<div class="footer">
+  <p>Copyright ⓒ Han myeong yoon All rights reserved.</p>
+</div>
+<br><br>
+
+</body>
+</html>
